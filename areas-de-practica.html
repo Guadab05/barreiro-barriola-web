@@ -4,10 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Áreas de práctica — Barreiro &amp; Barriola</title>
-<meta name="description" content="Tomamos cualquier causa penal, con orientación particular en violencia de género, delitos económicos, estupefacientes e investigación criminológica. Barreiro & Barriola.">
+<meta name="description" content="Tomamos cualquier causa penal, con orientación particular en violencia de género, delitos económicos, estupefacientes e investigación criminológica. Barreiro &amp; Barriola.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/img/BB-monograma-uva.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Áreas de práctica — Barreiro &amp; Barriola">
+<meta property="og:description" content="Tomamos cualquier causa penal, con orientación particular en violencia de género, delitos económicos, estupefacientes e investigación criminológica.">
+<meta property="og:image" content="assets/img/og-banner.jpg">
+<meta property="og:image:width" content="1584">
+<meta property="og:image:height" content="396">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Áreas de práctica — Barreiro &amp; Barriola">
+<meta name="twitter:description" content="Tomamos cualquier causa penal, con orientación particular en violencia de género, delitos económicos, estupefacientes e investigación criminológica.">
+<meta name="twitter:image" content="assets/img/og-banner.jpg">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -18,13 +29,13 @@
       <img src="assets/img/BB-monograma-uva.svg" alt="Monograma Barreiro &amp; Barriola">
       <span class="nav-marca-texto">BARREIRO &amp; BARRIOLA</span>
     </a>
-    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links">
+    <ul class="nav-links" id="menu-principal">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="nosotras.html">Nosotras</a></li>
-      <li><a href="areas-de-practica.html" class="activo">Áreas de práctica</a></li>
+      <li><a href="areas-de-practica.html" class="activo" aria-current="page">Áreas de práctica</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
     <a href="contacto.html" class="nav-cta">Consultar ahora</a>
@@ -34,24 +45,24 @@
 <main>
 
   <section class="bloque container" style="padding-top:64px">
-    <div class="bloque-cabecera" style="max-width:680px">
+    <div class="bloque-cabecera reveal" style="max-width:680px">
       <span class="eyebrow">Áreas de práctica</span>
       <h2>Trabajamos en toda la materia penal</h2>
       <p>Tomamos cualquier tipo de causa penal: analizamos el caso, definimos la estrategia y litigamos en todas las instancias del proceso.</p>
     </div>
 
     <div class="grilla grilla-3" style="margin-bottom:64px">
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">01</div>
         <h3>Etapa de instrucción</h3>
         <p>Análisis del caso desde el inicio de la investigación y definición de la estrategia de defensa.</p>
       </div>
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">02</div>
         <h3>Juicio</h3>
         <p>Representación y litigio durante el debate, con la estrategia definida en las etapas previas.</p>
       </div>
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">03</div>
         <h3>Etapa de ejecución</h3>
         <p>Acompañamiento durante la ejecución de la pena y las instancias posteriores a la sentencia.</p>
@@ -60,28 +71,28 @@
 
     <div class="regla-suave" style="margin-bottom:56px"></div>
 
-    <div class="bloque-cabecera" style="max-width:680px;margin-top:8px;margin-bottom:36px">
+    <div class="bloque-cabecera reveal" style="max-width:680px;margin-top:8px;margin-bottom:36px">
       <span class="eyebrow">Nuestra orientación</span>
       <p style="margin-top:14px">Además, tenemos una dedicación particular a estos temas:</p>
     </div>
 
     <div class="grilla grilla-2">
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">01</div>
         <h3>Violencia de género</h3>
         <p>Asesoramiento y representación con perspectiva de género en denuncias y procesos penales vinculados a situaciones de violencia de género.</p>
       </div>
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">02</div>
         <h3>Delitos económicos</h3>
         <p>Asesoramiento y defensa en causas por delitos económicos, con análisis estratégico adaptado a la complejidad propia de este tipo de casos.</p>
       </div>
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">03</div>
         <h3>Delitos vinculados a estupefacientes</h3>
         <p>Defensa penal en causas relacionadas con estupefacientes, con intervención en las distintas etapas del proceso.</p>
       </div>
-      <div class="tarjeta">
+      <div class="tarjeta reveal">
         <div class="num">04</div>
         <h3>Investigación criminológica y jurídica</h3>
         <p>Producción jurídica y análisis de doctrina y jurisprudencia desde una perspectiva penal y criminológica, como complemento de la estrategia de cada caso.</p>
@@ -90,7 +101,7 @@
   </section>
 
   <section class="franja-uva centro">
-    <div class="container" style="max-width:680px">
+    <div class="container reveal" style="max-width:680px">
       <span class="eyebrow">¿Tenés dudas?</span>
       <h2 style="color:var(--marfil);margin-top:16px">Si no sabés si tu caso va por vía penal, lo vemos juntos</h2>
       <div style="margin-top:32px">

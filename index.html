@@ -8,6 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/img/BB-monograma-uva.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barreiro &amp; Barriola — Estudio Jurídico Penal">
+<meta property="og:description" content="Estudio jurídico especializado en derecho penal. Guadalupe Barreiro y Guillermina Barriola, dos abogadas, una sola línea de defensa.">
+<meta property="og:image" content="assets/img/og-banner.jpg">
+<meta property="og:image:width" content="1584">
+<meta property="og:image:height" content="396">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Barreiro &amp; Barriola — Estudio Jurídico Penal">
+<meta name="twitter:description" content="Estudio jurídico especializado en derecho penal. Guadalupe Barreiro y Guillermina Barriola, dos abogadas, una sola línea de defensa.">
+<meta name="twitter:image" content="assets/img/og-banner.jpg">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -18,11 +29,11 @@
       <img src="assets/img/BB-monograma-uva.svg" alt="Monograma Barreiro &amp; Barriola">
       <span class="nav-marca-texto">BARREIRO &amp; BARRIOLA</span>
     </a>
-    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links">
-      <li><a href="index.html" class="activo">Inicio</a></li>
+    <ul class="nav-links" id="menu-principal">
+      <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
       <li><a href="nosotras.html">Nosotras</a></li>
       <li><a href="areas-de-practica.html">Áreas de práctica</a></li>
       <li><a href="contacto.html">Contacto</a></li>
@@ -50,7 +61,7 @@
   </section>
 
   <div class="container">
-    <div class="sello-divisor">
+    <div class="sello-divisor reveal">
       <span class="linea"></span>
       <div class="sello">
         <img src="assets/img/BB-monograma-bronce.svg" alt="">
