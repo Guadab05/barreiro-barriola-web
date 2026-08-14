@@ -165,6 +165,7 @@ p{margin:0}
   padding:64px 0;
 }
 .sello-divisor .linea{flex:1;max-width:220px;height:1px;background:var(--divisor)}
+.sello-divisor-banda{background:var(--marfil)}
 
 /* ---------- Secciones generales ---------- */
 section.bloque{padding:88px 0}
@@ -244,7 +245,7 @@ section.bloque{padding:88px 0}
 .dato-contacto a,.dato-contacto span.valor{font-size:18px;color:var(--uva);font-weight:500}
 
 /* ---------- Footer ---------- */
-.site-footer{background:var(--uva);color:var(--marfil);padding:64px 0 32px;border-top:2px solid rgba(166,143,107,.7)}
+.site-footer{background:var(--uva);color:var(--marfil);padding:64px 0 32px}
 .footer-top{
   display:flex;justify-content:space-between;align-items:flex-start;
   gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(166,143,107,.3);
