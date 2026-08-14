@@ -266,7 +266,7 @@ section.bloque{padding:88px 0}
 .dato-contacto a,.dato-contacto span.valor{font-size:18px;color:var(--uva);font-weight:500}
 
 /* ---------- Footer ---------- */
-.site-footer{background:var(--uva);color:var(--marfil);padding:64px 0 32px}
+.site-footer{background:var(--uva);color:var(--marfil);padding:64px 0 32px;border-top:1px solid rgba(166,143,107,.4)}
 .footer-top{
   display:flex;justify-content:space-between;align-items:flex-start;
   gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(166,143,107,.3);
