@@ -25,7 +25,9 @@
   --serif:'Playfair Display', Georgia, serif;
   --sans:'Montserrat', -apple-system, sans-serif;
 
-  --container: 1180px;
+  /* 1180 / .8 = el ancho que, al escalar con el zoom de arriba, vuelve a ocupar
+     exactamente el mismo espacio de borde a borde que antes de achicar */
+  --container: 1475px;
 }
 
 *{box-sizing:border-box}
