@@ -4,6 +4,13 @@
    Playfair Display (display) + Montserrat (texto)
    =================================================================== */
 
+/* Escala general de la página en pantallas grandes: replica el efecto
+   de tener el navegador al 80% de zoom, sin que la persona tenga que
+   tocar nada. En mobile no se aplica: ahí ya está ajustado aparte. */
+@media (min-width:900px){
+  html{zoom:.8}
+}
+
 :root{
   --uva:#2D1F2F;
   --uva-2:#3A2839;
@@ -66,7 +73,7 @@ p{margin:0}
 .nav-marca{display:flex;align-items:center;gap:14px}
 .nav-marca img{height:26px;width:auto}
 .nav-marca-texto{
-  font-family:var(--serif);font-weight:700;font-size:14px;
+  font-family:var(--serif);font-weight:700;font-size:15px;
   letter-spacing:.06em;color:var(--uva);
 }
 .nav-links{display:flex;gap:36px;list-style:none;margin:0;padding:0}
@@ -101,7 +108,7 @@ p{margin:0}
 .hero{
   position:relative;overflow:hidden;
   background:var(--marfil);
-  padding:76px 0 64px;
+  padding:100px 0 90px;
   animation:heroAparece .7s ease-out both;
 }
 @keyframes heroAparece{
@@ -117,16 +124,16 @@ p{margin:0}
 .hero .eyebrow-row{display:flex;align-items:center;gap:24px;margin-bottom:70px}
 .hero .eyebrow-row .regla{flex:1}
 .hero h1{
-  font-size:clamp(38px,5.5vw,66px);
+  font-size:clamp(44px,7vw,84px);
   line-height:1;letter-spacing:-.01em;
   margin-bottom:32px;
 }
 .hero .lema{
-  font-size:13px;letter-spacing:.22em;font-weight:600;color:var(--bronce);
-  margin-bottom:30px;text-transform:uppercase;
+  font-size:15px;letter-spacing:.24em;font-weight:600;color:var(--bronce);
+  margin-bottom:36px;text-transform:uppercase;
 }
 .hero .copy{
-  max-width:560px;font-size:16.5px;line-height:1.65;color:var(--texto-suave);
+  max-width:560px;font-size:19px;line-height:1.65;color:var(--texto-suave);
 }
 .hero .copy + .copy{margin-top:20px}
 .hero .copy strong{color:var(--uva);font-weight:600}
@@ -168,11 +175,11 @@ p{margin:0}
 .sello-divisor-banda{background:var(--marfil)}
 
 /* ---------- Secciones generales ---------- */
-section.bloque{padding:68px 0}
+section.bloque{padding:88px 0}
 .bloque-cabecera{max-width:640px;margin-bottom:56px}
 .bloque-cabecera .eyebrow{margin-bottom:16px}
-.bloque-cabecera h2{font-size:clamp(26px,3.2vw,34px);line-height:1.15}
-.bloque-cabecera p{margin-top:16px;font-size:15.5px;color:var(--texto-suave);line-height:1.65}
+.bloque-cabecera h2{font-size:clamp(30px,4vw,42px);line-height:1.1}
+.bloque-cabecera p{margin-top:18px;font-size:17px;color:var(--texto-suave);line-height:1.65}
 
 /* Grillas de tarjetas */
 .grilla{display:grid;gap:28px}
@@ -181,13 +188,13 @@ section.bloque{padding:68px 0}
 @media (max-width:860px){.grilla-2,.grilla-3{grid-template-columns:1fr}}
 
 .tarjeta{
-  background:#fff;border:1px solid var(--divisor);padding:28px;
+  background:#fff;border:1px solid var(--divisor);padding:36px;
 }
 .tarjeta .num{
   font-family:var(--serif);font-size:14px;color:var(--bronce);font-weight:700;margin-bottom:18px;
 }
-.tarjeta h3{font-size:18px;margin-bottom:10px}
-.tarjeta p{color:var(--texto-suave);font-size:14px;line-height:1.6}
+.tarjeta h3{font-size:21px;margin-bottom:12px}
+.tarjeta p{color:var(--texto-suave);font-size:15px;line-height:1.65}
 
 /* ---------- Perfil completo (página Nosotras) ---------- */
 .perfil{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:start;margin-bottom:100px}
@@ -202,9 +209,9 @@ section.bloque{padding:68px 0}
   font-family:var(--serif);font-size:64px;font-weight:700;color:var(--bronce);opacity:.55;
 }
 .perfil .rol{font-size:13px;letter-spacing:.3em;color:var(--bronce);text-transform:uppercase;font-weight:600}
-.perfil h2{font-size:clamp(26px,3.4vw,36px);margin-top:16px;line-height:1.1}
+.perfil h2{font-size:clamp(32px,4vw,46px);margin-top:20px;line-height:1.05}
 .perfil .regla{width:90px;margin:26px 0}
-.perfil .copy{font-size:15.5px;line-height:1.65;color:var(--texto-suave);max-width:600px}
+.perfil .copy{font-size:17px;line-height:1.65;color:var(--texto-suave);max-width:600px}
 .perfil .copy + .copy{margin-top:18px}
 .perfil .copy strong{color:var(--uva);font-weight:600}
 @media (max-width:760px){
@@ -260,7 +267,7 @@ section.bloque{padding:68px 0}
 .footer-marca{display:flex;align-items:center;gap:16px}
 .footer-marca img{height:32px}
 .footer-marca-texto div:first-child{
-  font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:.1em;color:var(--marfil);
+  font-family:var(--serif);font-weight:700;font-size:18px;letter-spacing:.1em;color:var(--marfil);
 }
 .footer-marca-texto div:last-child{
   font-size:11px;letter-spacing:.28em;color:var(--bronce);margin-top:4px;
