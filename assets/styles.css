@@ -241,11 +241,15 @@ section.bloque{padding:88px 0}
 @media (max-width:700px){.info-grilla{grid-template-columns:1fr}}
 .info-tarjeta{
   display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;
-  background:#fff;border:1px solid var(--divisor);padding:32px 20px;
+  background:var(--uva);color:var(--marfil);border:1px solid var(--uva-2);padding:32px 20px;
 }
-.info-tarjeta--destacada{border-color:var(--bronce);background:rgba(166,143,107,.08)}
-.info-tarjeta--destacada .canal-icono{background:var(--bronce);color:var(--uva)}
-.info-tarjeta .canal-valor{font-size:14px;line-height:1.5}
+.info-tarjeta .canal-etiqueta{color:var(--bronce)}
+.info-tarjeta .canal-valor{color:var(--marfil);font-size:14px;line-height:1.5}
+.info-tarjeta .canal-icono{background:var(--bronce);color:var(--uva)}
+.info-tarjeta--destacada{background:var(--bronce);border-color:var(--bronce)}
+.info-tarjeta--destacada .canal-etiqueta{color:var(--uva)}
+.info-tarjeta--destacada .canal-valor{color:var(--uva);font-weight:600}
+.info-tarjeta--destacada .canal-icono{background:var(--uva);color:var(--bronce)}
 
 /* ---------- Footer ---------- */
 .site-footer{background:var(--uva);color:var(--marfil);padding:64px 0 32px}
