@@ -263,10 +263,10 @@ section.bloque{padding:88px 0}
 /* ---------- Footer ---------- */
 .site-footer{background:var(--uva);color:var(--marfil);padding:64px 0 32px}
 .footer-top{
-  display:flex;flex-direction:column;gap:36px;
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:52px;
   padding-bottom:40px;border-bottom:1px solid rgba(166,143,107,.3);
 }
-.footer-marca{display:flex;align-items:center;gap:16px}
+.footer-marca{display:flex;align-items:center;justify-content:center;gap:16px}
 .footer-marca img{height:32px}
 .footer-marca-texto div:first-child{
   font-family:var(--serif);font-weight:700;font-size:18px;letter-spacing:.1em;color:var(--marfil);
@@ -274,7 +274,7 @@ section.bloque{padding:88px 0}
 .footer-marca-texto div:last-child{
   font-size:11px;letter-spacing:.28em;color:var(--bronce);margin-top:4px;
 }
-.footer-links{display:flex;gap:64px;flex-wrap:wrap}
+.footer-links{display:flex;justify-content:center;gap:64px;flex-wrap:wrap}
 .footer-col .eyebrow{color:var(--bronce);margin-bottom:14px;display:block}
 .footer-col a,.footer-col span{
   display:block;font-size:13.5px;color:#D9D2CC;margin-bottom:10px;
